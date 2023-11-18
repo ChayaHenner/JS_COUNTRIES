@@ -143,7 +143,7 @@ export const createStartCountries = () => {
         callApi(url).then(data => {
             ar_url.push(data[0])
             // console.log(data)
-            // console.log(ar_url)
+             console.log(ar_url)
             hideLoading()
             console.log(ar_url)
             localStorage.setItem("list", JSON.stringify(ar_url))
