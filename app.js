@@ -18,7 +18,7 @@ const doApi = async (name) => {
         if (data.status && data.status === 404) {
             alert("No country found. Back to home page")
             console.error('Error: Country Not Found (404)');
-            start()
+            createStartCountries()
         }
 
         else {
