@@ -1,0 +1,79 @@
+* {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header {
+    background-color: rgb(253, 253, 253);
+    min-height: 100px;
+    padding: 10px;
+    z-index: 1;
+}
+
+li {
+    display: inline;
+    text-align: center;
+    padding: 10px;
+
+}
+
+a {
+    text-decoration: none;
+    color: rgb(73, 82, 85);
+}
+
+a:hover {
+    color: rgb(6, 52, 53);
+    outline: rgba(58, 168, 183, 0.523) 3px;
+    outline-style:groove;
+    outline-offset: 4px;
+}
+
+.name {
+    font-weight: 700;
+    font-size: 30px;
+    color: rgb(85, 73, 73);
+}
+
+body {
+
+    z-index: -12;
+    background-image: url(globe\ \(1\).jpg);
+    background-size: cover;
+    background-size: 100%;
+    background-attachment: fixed;
+
+}
+
+.single {
+    background-color: rgba(255, 255, 255, 0.599);
+    max-height: 600px;
+    overflow: hidden;
+
+}
+
+footer {
+    background-color: rgb(253, 253, 253);
+    min-height: 100px;
+    padding: 10px;
+    z-index: 1;
+}
+
+.pic {
+    overflow: hidden;
+    height: 270px;
+    float: inline-end;
+    width: 100%;
+    padding: 0;
+
+}
+
+img {
+    width: 100%;
+    height: auto;
+
+}
+.img{
+    height: auto;
+    width: 80%;
+}
+
