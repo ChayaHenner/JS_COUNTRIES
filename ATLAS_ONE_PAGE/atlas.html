@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="atlas.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Josefin+Sans:ital,wght@0,300;0,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script type="module" src="app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+        integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body>
+    <header class=" p-3 shadow">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="links col row align-content-center">
+                    <ul>
+                        <li> <a href="atlas.html" class="name">Small World</a> </li>
+                        <li> <a href="atlas.html?name=USA">Usa</a> </li>
+                        <li> <a href="atlas.html?name=ISR">Israel</a> </li>
+                        <li> <a href="atlas.html?name=THA">Thailand</a> </li>
+                        <li> <a href="atlas.html?name=FRA">France</a> </li>
+                        <li> <a href="atlas.html?name=GBR">United Kingdom</a> </li>
+                    </ul>
+                </div>
+
+                <div class="col-4 d-flex m-3">
+                    <label class="col-auto m-1 row align-items-center">Sort by:</label>
+                    <select id="id_select" class="form-select m-1">
+                        <option id="">none</option>
+                        <option id="Title">name</option>
+                        <option id="Year">population</option>
+                    </select>
+                    <input placeholder="enter country" type="text" id="id_input" class="m-1 form-control">
+                    <button id="search_btn" class="btn btn-dark m-1">search</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="loading container text-center">
+        <div class=" spinner-border m-3" style="width: 10rem;height: 10rem; " role="status">
+        </div>
+        <p class="name">loading</p>
+    </div>
+    <main id="main">
+        <div class="container">
+            <div class="row  justify-content-center" id="main_row">
+
+
+                <!-- <div class="card m-3 p-4 shadow col-md-4 single">
+                    <div class="info ">
+                        <div class="pic" style="background-image: url("https://flagcdn.com/w320/jp.png");">
+                        <a href="atlasSingle.html?name=${this.code}">
+                            <img src="https://flagcdn.com/w320/jp.png" class="w-100" alt="${this.name} flag">
+                        </a></div>
+                        <div class="name text-center display-6 m-2">${this.name}</div>
+                    </div>
+                </div> -->
+
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container ">
+            <nav class="d-flex flex-wrap justify-content-around align-items-center">
+                <a href="https://www.facebook.com" target="blank"><i class="fa fa-facebook-official"
+                        aria-hidden="true"></i></a>
+                <a href="https://twitter.com" target="blank"><i class="fa fa-twitter" aria-hidden="true"></i></i></a>
+                <a href="https://www.instagram.com/" target="blank"><i class="fa fa-instagram"
+                        aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com" target="blank"><i class="fa fa-youtube-play"
+                        aria-hidden="true"></i></a>
+            </nav>
+            <p class="float-end pt-4 ">©chaya henner</p>
+        </div>
+
+        </div>
+    </footer>
+</body>
+<script>
+    AOS.init();
+</script>
+
+</html>
