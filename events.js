@@ -145,7 +145,7 @@ export const createStartCountries = () => {
             // console.log(data)
             // console.log(ar_url)
             hideLoading()
-            // console.log(ar_url)
+            console.log(ar_url)
             localStorage.setItem("list", JSON.stringify(ar_url))
 
             let country = new CountryClass(data[0])
