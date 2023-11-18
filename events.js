@@ -136,15 +136,17 @@ export const doApiSingle = () => {
 export const createStartCountries = () => {
     // console.log(ar_url)
     const ar_countries = ["usa", "israel", "Thailand", "france", "britain"]
+    const ar_url = []
 
     ar_countries.forEach(element => {
         let url = `https://restcountries.com/v3.1/name/${element}?fields=name,population,languages,currencies,capital,latlng,borgers,flags,cca3`
         callApi(url).then(data => {
-            // ar_url.push(data[0])
+            ar_url.push(data[0])
             // console.log(data)
             // console.log(ar_url)
             hideLoading()
             // console.log(ar_url)
+            localStorage.setItem("list", JSON.stringify(ar_url))
 
             let country = new CountryClass(data[0])
             country.render()
