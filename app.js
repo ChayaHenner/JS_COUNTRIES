@@ -5,7 +5,9 @@ let ar_url = []
 window.onload = () => {
     declareEvents(doApi)
     if (doApiSingle())
-            createStartCountries()
+        if (id_input.value.length > 1)
+                doApi(id_input.value);
+else createStartCountries()
 }
 
 const doApi = async (name) => {
