@@ -22,13 +22,8 @@ const doApi = async (name) => {
         }
 
         else {
-            console.log(data)
-            console.log(ar_url)
-            console.log(data[0])
             ar_url = data
-            console.log(ar_url)
             localStorage.setItem("list", JSON.stringify(ar_url))
-
             createCountry(ar_url)
         }
     })
