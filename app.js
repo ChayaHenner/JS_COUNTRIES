@@ -7,7 +7,7 @@ window.onload = () => {
     if (doApiSingle())
         if (id_input.value.length > 1)
                 doApi(id_input.value);
-else createStartCountries()
+        else createStartCountries()
 }
 
 const doApi = async (name) => {
