@@ -5,7 +5,7 @@ let ar_url = []
 window.onload = () => {
     declareEvents(doApi,createCountry)
     if (doApiSingle())
-       // if (id_input.value.length > 1)
+       if (id_input.value.length > 1)
                 doApi(id_input.value);
         else createStartCountries()
 }
