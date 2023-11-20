@@ -7,13 +7,13 @@ export const declareEvents = (doApi,createCountry) => {
     let id_select = document.querySelector("#id_select");
 
     search_btn.addEventListener("click", () => {
-        if (id_input.value.length > 1)
+      //  if (id_input.value.length > 1)
             doApi(id_input.value)
     })
     id_input.addEventListener("keydown", (e) => {
         console.log(e.key)
         if (e.key == "Enter") {
-            if (id_input.value.length > 1)
+          //  if (id_input.value.length > 1)
                 doApi(id_input.value);
         }
     })
