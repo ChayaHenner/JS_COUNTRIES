@@ -6,26 +6,6 @@ export const declareEvents = (doApi) => {
     let id_input = document.querySelector("#id_input")
     let id_select = document.querySelector("#id_select");
 
-
-// // When leaving the homepage (e.g., clicking a link)
-// window.addEventListener('beforeunload', () => {
-//     history.replaceState({ scrollX: window.scrollX, scrollY: window.scrollY }, '');
-// });
-
-// // When returning to the homepage
-// window.addEventListener('DOMContentLoaded', () => {
-//     // Disable automatic scroll restoration
-//     history.scrollRestoration = 'manual';
-
-//     // Check if there's a stored scroll position in the history state
-//     if (history.state && history.state.scrollX && history.state.scrollY) {
-//         // Restore the scroll position
-//         window.scrollTo(history.state.scrollX, history.state.scrollY);
-//     }
-// });
-
-
-
     search_btn.addEventListener("click", () => {
         if (id_input.value.length > 1)
             doApi(id_input.value)
@@ -63,6 +43,7 @@ export const hideLoading = () => {
     document.querySelector(".loading").style.display = "none";
     document.querySelector("#main_row").style.display = "flex";
 }
+
 export const codeToName = async (code) => {
     let url = `https://restcountries.com/v3.1/alpha/${code}`
     console.log(url);
@@ -142,10 +123,7 @@ export const createStartCountries = () => {
         let url = `https://restcountries.com/v3.1/name/${element}?fields=name,population,languages,currencies,capital,latlng,borgers,flags,cca3`
         callApi(url).then(data => {
             ar_url.push(data[0])
-            // console.log(data)
-             console.log(ar_url)
             hideLoading()
-            console.log(ar_url)
             localStorage.setItem("list", JSON.stringify(ar_url))
 
             let country = new CountryClass(data[0])
