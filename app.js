@@ -12,8 +12,8 @@ window.onload = () => {
 
 const doApi = async (name) => {
     
-   // if (name.length < 2)
-     //   alert("too short")//
+    if (name.length < 2)
+        alert("search too short")//
     else{
     load()
     localStorage.setItem("search", JSON.stringify(name))
