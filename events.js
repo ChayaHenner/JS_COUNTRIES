@@ -1,6 +1,6 @@
 import CountryClass from "./countryClass.js"
 
-export const declareEvents = (doApi) => {
+export const declareEvents = (doApi,createCountry) => {
 
     let search_btn = document.querySelector("#search_btn")
     let id_input = document.querySelector("#id_input")
